@@ -128,7 +128,7 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/output5.png)
 
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/output4.png)
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan34.png)
 
 ## 实验1-3：Azure IoT Central设置阈值，异常提示
 
