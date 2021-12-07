@@ -17,15 +17,18 @@
   - [实验1-2：连接到 Azure IoT Hub 并使用 D2C Message 发送时序数据](#实验1-2：连接到azureiothub并使用d2Cmessage发送时序数据)
     - [实验目的:](#实验目的-1)
     - [实验步骤：](#实验步骤-1)
-  - [实验1-3：用 Azure IoT Central 设置阈值并提示异常](#实验1-3：用azureiotcentral设置阈值并提示异常)
+  - [实验1-3使用Azure IoT Central可视化界面观察数据](#实验1-3：使用azureiotcentral可视化界面观察数据)
     - [实验目的:](#实验目的-2)
     - [实验步骤：](#实验步骤-2)
-  - [实验1-4：Azure IoT Central设置任务，使用C2D Message通道向设备发送指令，远程开启模拟智能会议系统](#实验1-4：azureioicentral设置任务，使用c2dmessage通道向设备发送指令，远程开启模拟智能会议系统)
+  - [实验1-4：用 Azure IoT Central 设置阈值并提示异常](#实验1-4：用azureiotcentral设置阈值并提示异常)
     - [实验目的:](#实验目的-3)
     - [实验步骤：](#实验步骤-3)
-  - [实验1-5：Wio Terminal模拟自动控制中心](#实验1-5wioterminal模拟自动控制中心)
+  - [实验1-5：Azure IoT Central设置任务，使用C2D Message通道向设备发送指令，远程开启模拟智能会议系统](#实验1-5：azureioicentral设置任务，使用c2dmessage通道向设备发送指令，远程开启模拟智能会议系统)
     - [实验目的:](#实验目的-4)
     - [实验步骤：](#实验步骤-4)
+  - [实验1-6：Wio Terminal模拟自动控制中心](#实验1-6wioterminal模拟自动控制中心)
+    - [实验目的:](#实验目的-5)
+    - [实验步骤：](#实验步骤-5)
 
 
 ## 准备1：硬件需求
@@ -128,9 +131,87 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/output5.png)
 
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan34.png)
+## 实验1-3：使用Azure IoT Central可视化界面观察数据
 
-## 实验1-3：Azure IoT Central设置阈值，异常提示
+### 实验目的:
+
+使用Azure IoT Central可视化界面观察数据。
+
+### 实验步骤：
+
+1. 创建设备templates
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-10.png)
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-11.png)
+
+输入名字”Smart_Office“。(请确保名字一致)
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-12.png)
+
+选择导入模型“Import a model”。
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-13.png)
+
+选择文件夹中的 [Smart_Office.json](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Office.json)    ![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-14.png)
+
+2. 点击Views，选择生成默认模板
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-15.png)
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-16.png)
+
+3.此次实验在默认模板的基础上进行修改，使其自定义化,点击Overview。
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-17.png)
+
+找到“LKV”，鼠标长按，将其拖拽至界面，如下图操作。
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-18.png)
+
+调节大小
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-19.png)
+
+设置其显示“ArethereanyPeople”，显示是否有人。
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-20.png)
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-21.png)
+
+点击上传
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-22.png)
+
+同理操作，设置空气质量类型
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-23.png)
+
+设置完成后如下图，点击Start with devices，下滑至底部找到“Command”
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-24.png)
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-25.png)
+
+选择Command选项为“meeting”。
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-26.png)
+
+设置结束后效果如下图
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-27.png)
+
+4. 返回后点击左上角“Publish”
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-28.png)
+
+5. 此时关闭串口，断开Wio Terminal再重新连接，打开串口。
+
+Azure IOT Central返回devices界面查看,选择设备，选择“Overview”即可查看。
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-29.png)
+
+## 实验1-4：Azure IoT Central设置阈值，异常提示
 
 ### 实验目的:
 
@@ -156,7 +237,7 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/output11.png)
 
-## 实验1-4：Azure IoT Central设置任务，使用C2D Message通道向设备发送指令，远程开启模拟智能会议系统
+## 实验1-5：Azure IoT Central设置任务，使用C2D Message通道向设备发送指令，远程开启模拟智能会议系统
 
 ### 实验目的：
 
@@ -168,7 +249,7 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan30.png)
 
-## 实验1-5：Wio Terminal模拟自动控制中心
+## 实验1-6：Wio Terminal模拟自动控制中心
 
 ### 实验目的：
 
