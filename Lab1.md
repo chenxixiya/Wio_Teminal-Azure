@@ -132,7 +132,7 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-4.png)
 
-下载并选择文件夹中的 [Wio_Terminal_Farm.json](https://files.seeedstudio.com/wiki/github_weiruanexample/Wio_Terminal_Farm.json)  ![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-5.png)
+下载并选择文件夹中的 [Wio_Terminal_Farm.json](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Farm.zip)  ![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-5.png)
 
 2. 点击Views，选择生成默认模板
 
