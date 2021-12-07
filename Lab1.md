@@ -107,9 +107,47 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan16.png)
 
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan17.jpg)
+## 实验1-3使用Azure IoT Central可视化界面观察数据
 
-## 实验1-3：Azure IoT Central设置任务，使用C2D Message通道向设备发送指令，模拟智慧农场定时浇灌
+### 实验目的:
+
+使用Azure IoT Central可视化界面观察数据。
+
+### 实验步骤：
+
+1.创建设备 templates
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image(1).png)
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-2.png)
+
+输入模板名称“Wio_Terminal_Farm”。(请确保名字一致)
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-3.png)
+
+选择导入模型“Import a model”。
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-4.png)
+
+下载并选择文件夹中的 [Wio_Terminal_faem.json](https://files.seeedstudio.com/wiki/github_weiruanexample/Wio_Terminal_faem.json)  ![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-5.png)
+
+2. 点击Views，选择生成默认模板
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-6.png)
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-7.png)
+
+3.返回后选择“Public”上传。
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-8.png)
+
+4. 此时关闭串口，断开Wio Terminal再重新连接，打开串口。
+
+Azure IOT Central返回devices界面查看,选择设备，选择“Overview”即可查看。
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-9.png)
+
+## 实验1-4：Azure IoT Central设置任务，使用C2D Message通道向设备发送指令，模拟智慧农场定时浇灌
 
 ### 实验目的：
 
@@ -135,7 +173,7 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 
 2. 在指定时间，观察任务是否被执行。
 
-## 实验1-4：Wio Terminal模拟自动控制中心
+## 实验1-5：Wio Terminal模拟自动控制中心
 
 ### 实验目的：
 
@@ -145,7 +183,7 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 
 实验1-1中上传的代码已实现该功能，此处模拟环境变化观察 Wio Terminal 变化即可。
 
-## 实验1-5：Azure IoT Central设置阈值，异常提示
+## 实验1-6：Azure IoT Central设置阈值，异常提示
 
 ### 实验目的：
 
