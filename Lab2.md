@@ -17,7 +17,7 @@
   - [实验1-2：连接到 Azure IoT Hub 并使用 D2C Message 发送时序数据](#实验1-2：连接到azureiothub并使用d2Cmessage发送时序数据)
     - [实验目的:](#实验目的-1)
     - [实验步骤：](#实验步骤-1)
-  - [实验1-3使用Azure IoT Central可视化界面观察数据](#实验1-3：使用azureiotcentral可视化界面观察数据)
+  - [实验1-3：使用Azure IoT Central可视化界面观察数据](#实验1-3：使用azureiotcentral可视化界面观察数据)
     - [实验目的:](#实验目的-2)
     - [实验步骤：](#实验步骤-2)
   - [实验1-4：用 Azure IoT Central 设置阈值并提示异常](#实验1-4：用azureiotcentral设置阈值并提示异常)
@@ -199,17 +199,17 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 
 设置结束后效果如下图
 
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-27.png)
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-29.png)
 
 4. 返回后点击左上角“Publish”
 
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-28.png)
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-27.png)
 
 5. 此时关闭串口，断开Wio Terminal再重新连接，打开串口。
 
 Azure IOT Central返回devices界面查看,选择设备，选择“Overview”即可查看。
 
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-29.png)
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-28.png)
 
 ## 实验1-4：Azure IoT Central设置阈值，异常提示
 
