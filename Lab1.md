@@ -15,7 +15,7 @@
   - [实验1-2：连接到Azure IoT Central平台并D2C Message发送时序数据](#实验1-2连接到azure-iot-hub并使用d2c-message发送时序数据)
     - [实验目的:](#实验目的-1)
     - [实验步骤：](#实验步骤-1)
-  - [实验1-3：使用Azure IoT Central可视化界面观察数据](#实验1-3：使用Azure IoT Central可视化界面观察数据)
+  - [实验1-3：使用Azure IoT Central可视化界面观察数据](#实验1-3：使用azure-iot-central可视化界面观察数据)
     - [实验目的:](#实验目的-2)
     - [实验步骤：](#实验步骤-2)
   - [实验1-4：Azure IoT Central设置任务，使用C2D Message通道向设备发送指令，模拟智慧农场定时浇灌](#实验1-3：azure-iot-central设置任务，使用c2d-Message通道向设备发送指令，模拟智慧农场定时浇灌)
