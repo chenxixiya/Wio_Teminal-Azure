@@ -15,15 +15,18 @@
   - [实验1-2：实验1-2：连接到Azure IoT Central平台并D2C Message发送时序数据](#实验1-2连接到azure-iot-hub并使用d2c-message发送时序数据)
     - [实验目的:](#实验目的-1)
     - [实验步骤：](#实验步骤-1)
-  - [实验1-3：Azure IoT Central设置任务，使用C2D Message通道向设备发送指令，模拟智慧农场定时浇灌](#实验1-3：azure-iot-central设置任务，使用c2d-Message通道向设备发送指令，模拟智慧农场定时浇灌)
+  - [实验1-3：使用Azure IoT Central可视化界面观察数据](#实验1-3：使用azure-iot-central可视化界面观察数据)
     - [实验目的:](#实验目的-2)
     - [实验步骤：](#实验步骤-2)
-  - [实验1-4：Wio Terminal模拟自动控制中心](#实验1-4：Wio-terminal模拟自动控制中心)
+  - [实验1-4：Azure IoT Central设置任务，使用C2D Message通道向设备发送指令，模拟智慧农场定时浇灌](#实验1-3：azure-iot-central设置任务，使用c2d-Message通道向设备发送指令，模拟智慧农场定时浇灌)
     - [实验目的:](#实验目的-3)
     - [实验步骤：](#实验步骤-3)
-  - [实验1-5：Azure IoT Central设置阈值，异常提示](#实验1-5：azure-ioT-central设置阈值，异常提示)
+  - [实验1-5：Wio Terminal模拟自动控制中心](#实验1-4：Wio-terminal模拟自动控制中心)
     - [实验目的:](#实验目的-4)
     - [实验步骤：](#实验步骤-4)
+  - [实验1-6：Azure IoT Central设置阈值，异常提示](#实验1-5：azure-ioT-central设置阈值，异常提示)
+    - [实验目的:](#实验目的-5)
+    - [实验步骤：](#实验步骤-5)
 
 ## 准备1：硬件需求
 
@@ -107,7 +110,7 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan16.png)
 
-## 实验1-3使用Azure IoT Central可视化界面观察数据
+## 实验1-3：使用Azure IoT Central可视化界面观察数据
 
 ### 实验目的:
 
@@ -129,7 +132,7 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-4.png)
 
-下载并选择文件夹中的 [Wio_Terminal_faem.json](https://files.seeedstudio.com/wiki/github_weiruanexample/Wio_Terminal_faem.json)  ![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-5.png)
+下载并选择文件夹中的 [Wio_Terminal_Farm.json](https://files.seeedstudio.com/wiki/github_weiruanexample/Wio_Terminal_Farm.json)  ![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-5.png)
 
 2. 点击Views，选择生成默认模板
 
