@@ -75,7 +75,7 @@ b. LED 灯连接的是 D3 口，即分别用三条杜邦线连接传感器的 VC
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan31.png)
 
-3. 下载[代码](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Office.zip)并用 Arduino IDE 上传到 Wio Terminal，上传完后打开右上角的串口
+3. 下载[代码](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Office_Azure.ino)并用 Arduino IDE 上传到 Wio Terminal，上传完后打开右上角的串口
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/output3.png)
 
@@ -153,7 +153,7 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-13.png)
 
-选择文件夹中的 [Smart_Office.json](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Office.json)    ![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-14.png)
+选择文件夹中的 [Smart_Office.json](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Office.zip)    ![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-14.png)
 
 2. 点击Views，选择生成默认模板
 
