@@ -64,10 +64,7 @@
 
 1. 连接传感器，空气传感器在右边 Grove 口，PM2.5 传感器在左边 Grove 口
 
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan26.png)
-
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan36.jpeg)
-
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/output.jpg)
 
 2. 在 Wio Terminal 后面连接人体红外线传感器和LED灯。
 
@@ -75,7 +72,10 @@ a. 人体红外传感器这里我们连接的是 D2 口，即分别用三条杜�
 
 b. LED 灯连接的是 D3 口，即分别用三条杜邦线连接传感器的 VCC（3.3V）），GND，SIG 口到 Wio Terminal 的编号 17，34，18接口。
 
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan31.png)
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan26.png)
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan36.jpeg)
+
 
 3. 下载[代码](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Office_Azure.ino)并用 Arduino IDE 上传到 Wio Terminal，上传完后打开右上角的串口
 
