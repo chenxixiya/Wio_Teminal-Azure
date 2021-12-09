@@ -62,7 +62,7 @@
 
 2. 在 Wio Terminal 后面连接紫外线传感器，这里我们连接的是 A2 口，即分别用三条杜邦线连接传感器的 VCC（3.3V）），GND，SIG 口到 Wio Terminal 的编号 1，39，16接口。
 
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan28.png)
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan35.jpeg)
 
 设计师作图中，后续补充
 
