@@ -64,7 +64,9 @@
 
 1. 连接传感器，空气传感器在右边 Grove 口，PM2.5 传感器在左边 Grove 口
 
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/output.jpg)
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan26.png)
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan36.jpeg)
 
 
 2. 在 Wio Terminal 后面连接人体红外线传感器和LED灯。
