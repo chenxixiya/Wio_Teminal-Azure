@@ -9,7 +9,7 @@
   - [目录](#目录)
   - [准备1：硬件需求](#准备1：硬件需求)
   - [准备2：软件需求](#准备2：软件需求)
-  - [实验1-1：采集并显示传感器数据](#实验1-1：采集并显示传感器数据)
+  - [实验1-1：设备连接](#实验1-1：设备连接)
     - [实验目的:](#实验目的)
     - [实验步骤：](#实验步骤)
   - [实验1-2：连接到Azure IoT Central平台并D2C Message发送时序数据](#实验1-2连接到azure-iot-hub并使用d2c-message发送时序数据)
@@ -48,31 +48,22 @@
 !!! note
     如果您刚开始使用 Wio Terminal 或者不知道怎么上传代码和添加库，可以查看[这里](https://github.com/chenxixiya/test/blob/main/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97.md)
 
-## 实验1-1：采集并显示传感器数据
+## 实验1-1：设备连接
 
 ### 实验目的:
 
-实时监测温室大棚温湿度，光线强度，紫外线强度及土壤湿度
+连接所需传感器。
 
 ### 实验步骤：
 
 1. 连接传感器，土壤湿度传感器在 右边 Grove 口，温湿度传感器 DHT20 在左边 Grove 口
 
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/connect.png)
-
-2. 在 Wio Terminal 后面连接紫外线传感器，这里我们连接的是 A2 口，即分别用三条杜邦线连接传感器的 VCC（3.3V）），GND，SIG 口到 Wio Terminal 的编号 1，39，16接口。
-
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/lab1.png)
+
+2. 在 Wio Terminal 后面连接紫外线传感器，这里我们连接的是 A2 口，即分别用grove线连接传感器的 VCC（红线），GND（黑线），SIG（黄线） 到 Wio Terminal 的编号 2，6，16接口（其中grove线的白线不用连接）。
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/lab1_2.png)
 
-设计师作图中，后续补充
-
-3. 下载[代码](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Farm_Azure.zip)并上传到 Wio Terminal。如果您不知道如何连接 Wio Terminal，可以参考这里的[入门教程](https://wiki.seeedstudio.com/cn/Wio-Terminal-Getting-Started/)
-
-4. 最后观察设备Wio Terminal界面上参数变化。
-
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/connect3.jpg)
 
 ## 实验1-2：连接到Azure IoT Central平台并D2C Message发送时序数据
 
@@ -104,9 +95,9 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan6.png)
 
-2. 修改 Arduino 代码并上传，需要改的内容为之前保存的 ID_scope 和 primary_key 以确保网页和设备相连
+2. 下载[代码](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Farm_Azure.zip)，修改 Arduino 代码并上传，需要改的内容为之前保存的 ID_scope 和 primary_key 以确保网页和设备相连，并且修改WIFI账号和密码。
 
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan15.png)
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruantugai2.png)
 
 3. 打开 Azure IoT Central ，选择已连接的设备即可观察数据
 
