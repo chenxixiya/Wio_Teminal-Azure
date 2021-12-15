@@ -43,7 +43,7 @@
 
 2. 打开要运行智慧农业的[代码](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Farm_Azure.ino)并添加运行所需要的[库](https://files.seeedstudio.com/wiki/github_weiruanexample/libraries.rar)到 Arduino IDE
 
-3. 注册 [Azure IoT Central](https://lab1.azureiotcentral.com/dashboards/)
+3. 注册 [Azure IoT Central](https://apps.azureiotcentral.com/)
 
 !!! note
     如果您刚开始使用 Wio Terminal 或者不知道怎么上传代码和添加库，可以查看[这里](https://github.com/chenxixiya/test/blob/main/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97.md)
