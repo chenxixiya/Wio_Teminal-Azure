@@ -11,10 +11,10 @@
   - [目录](#目录)
   - [准备1：硬件需求](#准备1：硬件需求)
   - [准备2：软件需求](#准备2：软件需求)
-  - [实验1-1：采集并显示传感器数据](#实验1-1：采集并显示传感器数据)
+  - [实验1-1：设备连接](#实验1-1：设备连接)
     - [实验目的:](#实验目的)
     - [实验步骤：](#实验步骤)
-  - [实验1-2：连接到 Azure IoT Hub 并使用 D2C Message 发送时序数据](#实验1-2：连接到azureiothub并使用d2Cmessage发送时序数据)
+  - [实验1-2：连接到 Azure IoT Central并使用 D2C Message 发送时序数据](#实验1-2：连接到azureiotcentral并使用d2Cmessage发送时序数据)
     - [实验目的:](#实验目的-1)
     - [实验步骤：](#实验步骤-1)
   - [实验1-3：使用Azure IoT Central可视化界面观察数据](#实验1-3：使用azureiotcentral可视化界面观察数据)
@@ -54,42 +54,28 @@
     如果您刚开始使用 Wio Terminal 或者不知道怎么上传代码和添加库，可以查看[这里](https://github.com/chenxixiya/test/blob/main/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97.md)
 
 
-## 实验1-1：采集并显示传感器数据
+## 实验1-1：设备连接
 
 ### 实验目的:
 
-实时监测办公室空气质量，PM2.5，光线强度，是否有人。
+连接所需传感器。
 
 ### 实验步骤：
 
 1. 连接传感器，空气传感器在右边 Grove 口，PM2.5 传感器在左边 Grove 口
 
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/output.jpg)
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/lab2.png)
 
 2. 在 Wio Terminal 后面连接人体红外线传感器和LED灯。
 
-a. 人体红外传感器这里我们连接的是 D2 口，即分别用三条杜邦线连接传感器的 VCC（3.3V）），GND，SIG 口到 Wio Terminal 的编号 1，39，16接口。
+a. 人体红外传感器这里我们连接的是 D2 口，即分别用grove线连接传感器的 VCC（红线），GND（黑线），SIG（黄线） 到 Wio Terminal 的编号 2，6，16接口（其中grove线的白线不用连接）。
 
-b. LED 灯连接的是 D3 口，即分别用三条杜邦线连接传感器的 VCC（3.3V）），GND，SIG 口到 Wio Terminal 的编号 17，34，18接口。
-
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/lab2.png)
+b. LED 灯连接的是 D3 口，即分别用grove线连接传感器的 VCC（红线），GND（黑线），SIG（黄线） 到 Wio Terminal 的编号 4，14，18接口（其中grove线的白线不用连接）。
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/lab2_2.png)
 
 
-3. 下载[代码](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Office_Azure.ino)并用 Arduino IDE 上传到 Wio Terminal，上传完后打开右上角的串口
-
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/output3.png)
-
-打开后即可看到 Wio Termianl 亮起且开始收集信息
-
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/output2.png)
-
-4. 最后观察设备 Wio Terminal 界面上参数变化。
-
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/output.jpg)
-
-## 实验1-2：连接到Azure IoT Hub并使用D2C Message发送时序数据
+## 实验1-2：连接到 Azure IoT Central并使用 D2C Message 发送时序数据
 
 ### 实验目的:
 
@@ -121,11 +107,11 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/image6.png)
 
 
-3. 修改 Arduino 代码并上传，需要改的内容为之前保存的 ID_scope 和 primary_key 以确保网页和设备相连
+3. 下载[代码](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Office_Azure.ino)，修改 Arduino 代码并上传，需要改的内容为上一步保存的 ID_scope 和 primary_key 以确保网页和设备相连，并且修改WIFI账号和密码。
 
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/image12.png)
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruantugai3.png)
 
-4. 再观察 Arduino 的串口看是否依然连接成功
+4. Arduino IDE提示上传成功后，打开Arduino IDE右上角的串口，再观察是否连接成功
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/image13.png)
 
@@ -177,7 +163,7 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 
 设置其显示“ArethereanyPeople”，显示是否有人。
 
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-20.png)
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruantugai4.png)
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-21.png)
 
@@ -203,7 +189,11 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-29.png)
 
-4. 返回后点击左上角“Publish”
+4. 点击左上角的“Save”保存后点击”Back“返回。
+
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruantugai5.png)
+
+返回后点击左上角“Publish”。
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/image-27.png)
 
@@ -259,6 +249,6 @@ Wio Terminal内置光传感器可以检测环境光亮度，从而调节灯的�
 
 ### 实验步骤：
 
-实验1-1中上传的代码已实现该功能，此处模拟环境变化观察 Wio Terminal 变化即可。
+实验1-2中上传的代码已实现该功能，此处模拟环境变化观察 Wio Terminal 变化即可。
 
 
