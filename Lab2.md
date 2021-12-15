@@ -72,9 +72,9 @@ a. 人体红外传感器这里我们连接的是 D2 口，即分别用三条杜�
 
 b. LED 灯连接的是 D3 口，即分别用三条杜邦线连接传感器的 VCC（3.3V）），GND，SIG 口到 Wio Terminal 的编号 17，34，18接口。
 
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan26.png)
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/lab2.png)
 
-![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan36.jpeg)
+![](https://files.seeedstudio.com/wiki/github_weiruanexample/lab2_2.png)
 
 
 3. 下载[代码](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Office_Azure.ino)并用 Arduino IDE 上传到 Wio Terminal，上传完后打开右上角的串口
