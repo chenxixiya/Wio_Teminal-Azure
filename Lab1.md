@@ -103,7 +103,7 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan16.png)
 
-## 实验1-3：使用Azure IoT Central可视化界面观察数据https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
+## 实验1-3：使用Azure IoT Central可视化界面观察数据
 
 ### 实验目的:
 
