@@ -46,7 +46,7 @@
 3. 注册 [Azure IoT Central](https://apps.azureiotcentral.com/)
 
 !!! note
-    如果您刚开始使用 Wio Terminal 或者不知道怎么上传代码和添加库，可以查看[这里]
+    如果您刚开始使用 Wio Terminal 或者不知道怎么上传代码和添加库，可以查看[这里](https://github.com/chenxixiya/Wio_Teminal-Azure/blob/main/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97.md)
 
 ## 实验1-1：设备连接
 
