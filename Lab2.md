@@ -46,12 +46,12 @@
 
 1. 用电脑连接 Wio Terminal
 
-2. 打开要运行智慧办公室的[代码](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Office_Azure.ino)并添加运行所需要的[库](https://files.seeedstudio.com/wiki/github_weiruanexample/libraries.rar)到 Arduino IDE
+2. 打开要运行智慧办公室的[代码](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Office_Azure1.ino)并添加运行所需要的[库](https://files.seeedstudio.com/wiki/github_weiruanexample/libraries1.zip)到 Arduino IDE
 
-3. 注册 [Azure IoT Central](https://apps.azureiotcentral.com/)
+3. 注册 [Azure IoT Central](https://lab1.azureiotcentral.com/dashboards/)
 
 !!! note
-    如果您刚开始使用 Wio Terminal 或者不知道怎么上传代码和添加库，可以查看[这里](https://github.com/chenxixiya/test/blob/main/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97.md)
+    如果您刚开始使用 Wio Terminal 或者不知道怎么上传代码和添加库，可以查看[这里]
 
 
 ## 实验1-1：设备连接
@@ -107,7 +107,7 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/image6.png)
 
 
-3. 下载[代码](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Office_Azure.ino)，修改 Arduino 代码并上传，需要改的内容为上一步保存的 ID_scope 和 primary_key 以确保网页和设备相连，并且修改WIFI账号和密码。
+3. 下载[代码](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Office_Azure1.ino)，修改 Arduino 代码并上传，需要改的内容为上一步保存的 ID_scope 和 primary_key 以确保网页和设备相连，并且修改WIFI账号和密码。
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruantugai3.png)
 
