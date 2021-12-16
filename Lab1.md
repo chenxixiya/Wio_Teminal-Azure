@@ -95,7 +95,7 @@ e. 拷贝下“ID scope”和“Primary key”，两个参数使我们要填在�
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruan6.png)
 
-2. 下载[代码](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Farm_Azure1.zip)，修改 Arduino 代码并上传，需要改的内容为之前保存的 ID_scope 和 primary_key 以确保网页和设备相连，并且修改WIFI账号和密码。
+2. 下载[代码](https://files.seeedstudio.com/wiki/github_weiruanexample/Smart_Farm_Azure1.ino)，修改 Arduino 代码并上传，需要改的内容为之前保存的 ID_scope 和 primary_key 以确保网页和设备相连，并且修改WIFI账号和密码。
 
 ![](https://files.seeedstudio.com/wiki/github_weiruanexample/weiruantugai2.png)
 
